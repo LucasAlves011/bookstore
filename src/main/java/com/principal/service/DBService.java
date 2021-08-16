@@ -31,13 +31,17 @@ public class DBService {
 
         Livro livro1 = new Livro(null,"Clean Code","Robert Martin","Text",cat1);
 
+        Livro livro5 = new Livro(null,"MySQL pra novos","Lucas Alves","pegadinha",cat1);
+
         cat1.getLivros().addAll(List.of(livro1));
         romance.getLivros().addAll(List.of(livro2));
         guerra.getLivros().addAll(List.of(livro3));
         biografia.getLivros().addAll(List.of(livro4));
 
         this.categoriaRepository.saveAll(List.of(cat1,romance,guerra,biografia));
-        this.livroRepository.saveAll(List.of(livro1,livro2,livro3,livro4));
+//        this.livroRepository.saveAll(List.of(livro1,livro2,livro3,livro4));
+        this.livroRepository.saveAll(List.of(livro5));
+
     }
 
 }
