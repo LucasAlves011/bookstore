@@ -39,7 +39,7 @@ public class DBService {
         biografia.getLivros().addAll(List.of(livro4));
 
         this.categoriaRepository.saveAll(List.of(cat1,romance,guerra,biografia));
-//        this.livroRepository.saveAll(List.of(livro1,livro2,livro3,livro4));
+        this.livroRepository.saveAll(List.of(livro1,livro2,livro3,livro4));
         this.livroRepository.saveAll(List.of(livro5));
 
     }
